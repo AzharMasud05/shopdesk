@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Activity log / কার্যক্রমের ইতিহাস</h1><section class="card"><table><tr><th>Date</th><th>User</th><th>Action</th><th>Details</th></tr>{% for r in rows %}<tr><td>{{r.created_at}}</td><td>{{r.username}}</td><td>{{r.action}}</td><td>{{r.detail}}</td></tr>{% endfor %}</table></section>{% endblock %}
